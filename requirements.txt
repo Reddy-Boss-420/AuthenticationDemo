@@ -1,0 +1,8 @@
+# Requirements for the project
+
+# backend
+flask~=2.3.2
+pyrebase4~=4.6.0
+
+# requests-toolbelt
+requests-toolbelt~=0.10.1
