@@ -5,6 +5,8 @@ import pyrebase
 
 app = Flask(__name__)
 
+app.static_folder = 'static'
+
 config = {
     'apiKey': "AIzaSyC_5M7TaDgNf6J2AXxdJncGR5oOiVUPdDY",
     'authDomain': "authentication-8898c.firebaseapp.com",
@@ -35,7 +37,7 @@ def index() -> str:
             session['user'] = email
         except:
             return 'Failed to login'
-    return render_template('home.html')
+    return render_template('stylehome.html')
 
 
 @app.route('/logout')
